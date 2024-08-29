@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <form>
+        <center><h1>Bank Account Registration form</h1></center>
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="type">Account type</label>
+            <select id="type">
+                <option>please select</option>
+                <option>Checking Account</option>
+                <option>Savings Account</option>
+                <option>A money market account</option>
+                <option>Certificates of deposit</option>
+                <option>IRA account</option>
+            </select>
+            <label for="Ctype">Current type</label>
+            <select id="Ctype">
+                <option>please select</option>
+                <option>USD-US Dollar</option>
+                <option>EUR-Euro</option>
+                <option>GBP-Pound sterling</option>
+                <option>CAD-Canadian Dollar</option>
+                <option>KWD-kuwaiti Dinar</option>
+            </select>     
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>The information given in this section is considered as the information of the primary account owner information</p>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="prefix">
+            <input type="text" id="name" name="first name">
+            <input type="text" id="name" name="last name"><br><br>
+
+            <label for="mobile number">Phone Number</label>
+            <input type="tel" id="mobile number" name="number">
+
+            <label for="date">Date-of-Birth</label>
+            <input type="date" id="date" name="date of Birth"><br><br>
+
+            <label for="address">Residential Address</label>
+            <input type="text" id="address" name="residential address"><br>
+            <small>street address</small><br><br>
+
+            <input type="text" id="address" name="residential address"><br>
+            <small>street address Line 2</small><br><br>
+
+            <input type="text" id="address" name="residential address" placeholder="city">
+
+            <input type="text" id="address" name="residential address" placeholder="state/province">
+
+            <input type="text" id="address" name="residential address" placeholder=postal/zipcode><br><br>
+
+            <input list="countries" placeholder="Select country">
+            <datalist id="countries">
+                <option>India</option>
+                <option>South America</option>
+                <option>Srilanka</option>
+                <option>England</option>
+                <option>Australia</option>
+                <option>Germany</option>
+                <option>China</option>
+                <option>Korea</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="citizenship">Citizenship</label><br>
+            <input type="radio" id="citizenship" name="citizens"><span>India citizen</span>
+            <input type="radio" id="citizenship" name="citizens"><span>US citizen</span>
+            <input type="radio" id="citizenship" name="citizens"><span>EU citizen</span><br><br>
+            
+            <label for="status">Marital Status</label>
+            <select id="status">
+                <option>please select</option>
+                <option>Married</option>
+                <option>Single</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+                <option>Seperated</option>
+            </select><br><br>
+            <label for="work">Occupation</label><br>
+            <input type="text" id="work"><br><br>
+            <label for="name">Employer Name</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="choosing">Do you want to add joint owner to the bank account?</label><br>
+            <input type="radio" id="choosing" name="joint owmer"><span>Yes</span>
+            <input type="radio" id="choosing" name="joint owmer"><span>No</span>
+        </fieldset>
+        <p>By signing this form, I acknowledge that the information I've given in this form is accurate and I agree all the terms and conditions.</p>
+        
+        <input type="checkbox"><span> I agree to Terms & Conditions</span><br><br>
+
+        <label for="any comments">Any Comments</label><br>
+        <textarea id="any comments" name="any comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit">
+    </form>
+   </div> 
+</body>
+</html>
